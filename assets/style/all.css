@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  display: block;
+  text-decoration: none; }
+
+.fz-s {
+  font-size: 20px; }
+
+.fz-m {
+  font-size: 24px; }
+
+.bg-light {
+  background-color: #EFE9E7 !important;
+  color: #3D1101; }
+
+.bg-dark {
+  background: #3D1101;
+  color: #EFE9E7; }
+
+.p-primary {
+  padding: 50px 42px; }
+  @media (max-width: 576px) {
+    .p-primary {
+      padding: 25px 18px; } }
+
+.p-secondary {
+  padding: 50px 62px; }
+  @media (max-width: 576px) {
+    .p-secondary {
+      padding: 25px 18px; } }
+
+header {
+  background: url(../images/header_desktop.png) no-repeat center center;
+  background-size: cover;
+  height: 420px; }
+  header nav {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 0 42px; }
+    header nav h1 a {
+      background: url(https://hexschool.github.io/Rwd_sketch_export/assets/logo_w@svg.svg) no-repeat center center;
+      width: 120px;
+      height: 24px;
+      text-indent: 9999%;
+      white-space: nowrap;
+      overflow: hidden;
+      display: block; }
+    header nav a {
+      color: white;
+      padding: 16px 15px; }
+    header nav .navbar.active {
+      max-height: 300px; }
+  header section {
+    padding: 67px; }
+    header section .banner {
+      max-width: 460px;
+      background: rgba(0, 0, 0, 0.35);
+      color: white;
+      padding: 22px; }
+    header section h2 {
+      font-size: 36px;
+      margin-bottom: 16px; }
+  @media (max-width: 576px) {
+    header {
+      background: url(../images/header_mobile.png) no-repeat center center;
+      background-size: cover;
+      height: auto; }
+      header nav {
+        padding: 0 20px; }
+        header nav .navbar {
+          max-height: 0px;
+          position: absolute;
+          z-index: 100;
+          right: 0;
+          top: 100%;
+          -webkit-transition: all 0.8s;
+          -o-transition: all 0.8s;
+          transition: all 0.8s;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          background: rgba(0, 0, 0, 0.75); }
+      header section h2 {
+        font-size: 30px; } }
+
+footer {
+  padding: 50px 42px; }
+  footer h3 {
+    font-size: 24px; }
+  footer p {
+    max-width: 300px; }
+  footer .contact a {
+    color: inherit; }
+    footer .contact a:hover {
+      font-weight: bold; }
+  footer .snsLink li a {
+    font-size: 36px; }
+    footer .snsLink li a:hover {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
+  footer .snsLink li .snsGoogle {
+    color: #DB4437; }
+  footer .snsLink li .snsTwitter {
+    color: #41ABE1; }
+  footer .snsLink li .snsFb {
+    color: #3A5795; }
+  @media (max-width: 576px) {
+    footer {
+      padding: 50px 30px; } }
+
+.indexMain .bsConcept h2::before, .indexMain .bsConcept h2::after {
+  content: '';
+  position: absolute;
+  background: #3D1101;
+  width: 18%;
+  height: 1px; }
+
+.indexMain .bsConcept h2::before {
+  left: 220px;
+  bottom: 45px; }
+
+.indexMain .bsConcept h2::after {
+  right: 220px; }
+
+.indexMain .bsConcept li {
+  padding: 0 30px; }
+
+.indexMain .bsConcept img {
+  border-radius: 100px; }
+
+@media (max-width: 992px) {
+  .indexMain .bsConcept h2::before, .indexMain .bsConcept h2::after {
+    height: 0; } }
+
+.indexMain .mainChef {
+  padding-top: 0;
+  padding-bottom: 0; }
+  .indexMain .mainChef .chefInfo {
+    padding: 30px 20px;
+    max-width: 410px; }
+
+.indexMain .comment img {
+  border-radius: 100px; }
+
+.indexMain .map {
+  background: rgba(250, 250, 250, 0.7);
+  color: #3D1101; }
+  .indexMain .map form {
+    max-width: 460px; }
+  .indexMain .map .orderInfo input {
+    padding: 3px 12px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #ECECEC;
+            box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    border-radius: 3px; }
+
+/*# sourceMappingURL=all.css.map */
