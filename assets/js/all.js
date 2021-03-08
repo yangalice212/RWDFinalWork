@@ -1,8 +1,33 @@
 "use strict";
 
 $(document).ready(function () {
+  //折疊選單
   $('.hamBtn').click(function () {
     $('.navbar').toggleClass('active');
+  }); //go to top
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 60) {
+      $('#gotop').fadeIn();
+    } else {
+      $('#gotop').fadeOut();
+    }
+  });
+  $("#gotop").click(function () {
+    $("html ,body").animate({
+      scrollTop: 0
+    }, 800);
+  }); //cta
+
+  $('.cta').click(function () {
+    $('html, body').animate({
+      scrollTop: $($(this).attr("href")).offset().top
+    }, 500);
+  }); //addFavorite
+
+  $('.favorite').click(function (e) {
+    e.preventDefault();
+    $('i', this).toggleClass('far fa-heart fas fa-heart');
   });
 });
 "use strict";

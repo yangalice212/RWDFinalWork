@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>首頁 | 六角西餐廳</title>
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="./assets/images/hamIcon.jpeg">
   <meta name='description' content='咬一口就無法忘懷的漢堡'/>
 
   <meta property="og:title" content="六角西餐廳"/>
   <meta property="og:description" content="咬一口就無法忘懷的漢堡">
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="FB上的網址"/>
-  <meta property="og:image" content="FB的圖片"/>
+  <meta property="og:image" content="./assets/images/header_desktop.png"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 
-  <link href="圖片路徑" rel="apple-touch-icon" />
+  <link href="./assets/images/hamIcon.jpeg" rel="apple-touch-icon" />
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -22,21 +20,21 @@
 </head>
 
 <body>
-  <header class="">
+  <header>
     <nav class="d-flex justify-content-between align-items-center position-relative w-100">
       <h1><a href="index.html">六角西餐廳</a></h1>
       <ul class="navbar d-flex text-center">
         <li><a href="menu.html">菜單</a></li>
-        <li class="d-sm-none d-lg-block"><a href="#">特色</a></li>
-        <li class="d-sm-none d-lg-block"><a href="#">主廚</a></li>
-        <li class="d-sm-none d-lg-block"><a href="#">地圖</a></li>
+        <li class="d-sm-none d-lg-block"><a class="cta" href="#featuer">特色</a></li>
+        <li class="d-sm-none d-lg-block"><a class="cta" href="#chef">主廚</a></li>
+        <li class="d-sm-none d-lg-block"><a class="cta" href="#map">地圖</a></li>
         <li><a href="login.html">登入</a></li>
       </ul>
       <a href="#" class="hamBtn d-block d-sm-none"><i class="fas fa-bars"></i></a>
     </nav>
     <section class="d-flex justify-content-center">
       <div class="banner text-center">
-        <h2 class="">咬一口就無法忘懷的漢堡</h2>
+        <h2 class="mb-3 fz-xl fz-md-l">咬一口就無法忘懷的漢堡</h2>
         <h3>七夕絕對無法錯過的好滋味 <br>
           <i class="fas fa-utensils"></i>
           六角大漢堡 
@@ -48,8 +46,8 @@
 
   
 <main class="indexMain bg-light">
-    <section class="bsConcept container text-center p-secondary">
-        <h2 class="fz-s mb-4">客人總是在詢問<br>這麼好吃的秘訣是什麼</h2>
+    <section class="feature container text-center p-secondary" id="feature">
+        <h2 class="fz-s mb-4 position-relative">客人總是在詢問<br>這麼好吃的秘訣是什麼</h2>
         <ul class="row list-unstyled">
             <li class="col-12 col-md-4 mb-3 mb-md-0">
                 <img class="mb-3" src="assets/images/feature_1.png" alt="feature_1">
@@ -68,10 +66,10 @@
             </li>
         </ul>
     </section>
-    <section class="mainChef bg-dark p-primary">
+    <section class="mainChef bg-dark p-primary py-0" id="chef">
         <div class="container">
             <div class="d-flex flex-wrap justify-content-center align-items-center">
-                <img src="./assets/images/main_chef_brown.png" alt="main_chef_brown">
+                <img class="m-0" src="./assets/images/main_chef_brown.png" alt="main_chef_brown">
                 <div class="chefInfo">
                     <h2 class="fz-s">今日主廚：帕金森、梅在帕 <br> Tody Chef: Plum in Shock</h2>
                     <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
@@ -110,9 +108,9 @@
             </ul>
         </div>
     </section>
-    <section class="map p-primary">
+    <section class="map p-primary" id="map">
         <h2 class="text-center mb-4 fz-m">我們的位置不太夠坐 <br> 要不要先定位呢？</h2>
-        <div class="d-flex container justify-content-center flex-wrap flew-md-nowrap">
+        <div class="d-flex container justify-content-center flex-wrap flex-md-nowrap">
             <iframe class="mb-3" width="460" height="386" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCg5OsnCKmmYE1F4Mfgbf_Nk1OZoPWbiDc&q=高雄軟體園區站" frameborder="0"></iframe>
             <form action="index.html" class="ms-3">
                 <div class="orderInfo">
@@ -132,7 +130,7 @@
                 </div>    
                 <ul class="d-flex justify-content-end list-unstyled">
                     <li><input class="btn btn-secondary me-2" type="reset" value="取消"></li>
-                    <li><input class="btn btn-warning" type="submit" value="送出"></li>
+                    <li><input class="btn btn-submit" type="submit" value="送出"></li>
                 </ul>
             </form>
         </div>
@@ -143,11 +141,11 @@
   <footer class="d-flex justify-content-between flex-wrap flex-sm-nowrap bg-light">
     <div class="d-flex flex-wrap">
       <div class="me-3 mb-2">
-        <h3 class="mb-3">關於 六角西餐廳</h3>
+        <h3 class="mb-3 fz-m">關於 六角西餐廳</h3>
         <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. </p>
       </div>
       <div class="contact mb-4 mb-sm-0">
-        <h3 class="mb-3">聯絡方式</h3>
+        <h3 class="mb-3 fz-m">聯絡方式</h3>
         <ul class="list-style-disc">
           <li><a href="https://cutt.ly/FzwZNFY" target="_blank">高雄市中正五路到底</a></li>
           <li><a href="tel:++886 886 886">+886 886 886</a></li>
@@ -158,12 +156,13 @@
     <div class="ms-auto">
       <h3 class="mb-3"><a href="index.html"><img src="https://hexschool.github.io/Rwd_sketch_export/assets/logo_l@svg.svg" alt="header_desktop"></a></h3>
       <ul class="snsLink d-flex justify-content-end list-unstyled">
-        <li class="me-2"><a href="#" class="snsGoogle"><i class="fab fa-google-plus-square"></i></a></li>
-        <li class="me-2"><a href="#" class="snsTwitter"><i class="fab fa-twitter-square"></i></a></li>
-        <li><a href="#" class="snsFb"><i class="fab fa-facebook-square"></i></a></li>
+        <li class="me-2"><a href="#" class="snsGoogle fz-xl"><i class="fab fa-google-plus-square"></i></a></li>
+        <li class="me-2"><a href="#" class="snsTwitter fz-xl"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="#" class="snsFb fz-xl"><i class="fab fa-facebook-square"></i></a></li>
       </ul>
     </div>
   </footer>
+  <a href="#" id="gotop"><i class="fas fa-arrow-circle-up"></i></a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>  <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
