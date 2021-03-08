@@ -1,0 +1,59 @@
+.indexMain{
+    .feature{
+        h2{
+            &::before,&::after{
+                content: '';
+                position: absolute;
+                background: #3D1101;
+                width: 18%;
+                height: 1px;
+            }
+            &::before{
+                left: 200px;
+                top: 30px;
+            }
+            &::after{
+                right: 200px
+            }
+        }
+        li{
+            padding: 0 30px;
+        }
+        img{
+            border-radius: 100px;
+        }
+        @include pc{
+            h2{
+                &::before,&::after{
+                    height: 0;
+                }
+            }
+        }
+    }
+    .mainChef{
+        .chefInfo{
+            padding: 30px 20px;
+            max-width: 410px;
+        }
+    }
+    .comment{
+        img{
+            border-radius: 100px;
+        }
+    }
+    .map{
+        background: rgba(250,250,250,0.70);
+        color: #3D1101;
+        form{
+            max-width: 460px;
+        }
+        .orderInfo input{
+            padding: 3px 12px;
+            background: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            box-shadow: inset 0px 1px 0px 0px #ECECEC;
+            border-radius: 3px;
+        }
+        
+    }
+}

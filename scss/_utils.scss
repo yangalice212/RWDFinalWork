@@ -1,0 +1,55 @@
+.fz-xxs{
+    font-size: 12px;
+}
+.fz-xs{
+    font-size: 18px;
+}
+.fz-s{
+    font-size: 20px;
+}
+.fz-m{
+    font-size: 24px;
+}
+.fz-xl{
+    font-size: 36px;
+}
+.fz-md-l{
+    @include pad{
+        font-size: 30px !important;
+    }
+}
+.bg-light{
+    background-color: #EFE9E7 !important;
+    color: #3D1101;
+}
+.bg-dark{
+    background: #3D1101;
+    color: #EFE9E7;
+}
+.p-primary{
+    padding: 50px 42px;
+    @include phone{
+        padding: 25px 18px;
+    }
+}
+.p-secondary{
+    padding: 50px 62px;
+    @include phone{
+        padding: 25px 18px;
+    }
+}
+.btn-submit{
+    background: #F56C23;
+    color: white;
+    &:hover{
+        background: #d64d03;
+    }
+}
+.btn-light-submit{
+    border: 1px solid #F56C23;
+    color: #F56C23 !important;
+    &:hover{
+        background: #F56C23;
+        color: white !important;
+    }
+}

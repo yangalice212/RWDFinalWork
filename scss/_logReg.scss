@@ -1,0 +1,57 @@
+.loginForm{
+    max-width: 300px;
+    margin: 0 auto;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    border-top: 3px solid #FF5E45;
+    a{
+        color: #FF5E45;
+    }
+    ul a,ul input{
+        padding: 6px 40px;
+    }
+}
+.registerForm{
+    max-width: 620px;
+    margin: 0 auto;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    border-top: 3px solid #FF5E45;
+    .terms,form{
+        max-width: 285px;
+    }
+    .regBtn{
+        padding: 6px 40px;
+    }
+}
+.loginForm, .registerForm{
+    h4{
+        font-weight: bold;
+    }
+    .font-weight-light{
+        font-weight: lighter;
+        color: #FF5E45;
+        &:hover{
+            color: #d64d03;
+        }
+    }
+}
+.emailInput,.passwordInput,.passwordCheck{
+    input{
+        padding-left: 30px;
+    }
+    i{
+        position: absolute;
+        left: 10px;
+        font-size: 10px;
+        color: #3D1101;
+        opacity: 0.5;
+    }
+}
+.emailInput i{  
+    top: 50%;
+}
+.passwordInput i{
+    top: 65%;
+}
+.passwordCheck i{
+    top: 35%;
+}

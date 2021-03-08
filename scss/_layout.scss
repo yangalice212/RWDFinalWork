@@ -1,0 +1,93 @@
+header{
+    background: url(../images/header_desktop.png) no-repeat center center;
+    background-size: cover;
+    height: 420px;
+    nav{
+        background: rgba(0,0,0,0.75);
+        padding: 0 42px;
+        h1 a{
+            background: url(https://hexschool.github.io/Rwd_sketch_export/assets/logo_w@svg.svg) no-repeat center center;
+            width: 120px;
+            height: 24px;
+            @include hide-text;
+        }
+        a{
+            color: white;
+            padding: 16px 15px;
+        }
+        .navbar.active{
+            max-height: 300px;
+        }
+    }
+    section{
+        padding: 67px;
+        .banner{
+            max-width: 460px;
+            background: rgba(0,0,0,0.35);
+            color: white;
+            padding: 22px;
+        }
+    }
+    @include phone{
+        background: url(../images/header_mobile.png) no-repeat center center;
+        background-size: cover;
+        height: auto;
+        nav{
+            padding: 0 20px;
+            .navbar{
+                max-height: 0px;
+                position: absolute;
+                z-index: 100;
+                right: 0;
+                top: 100%;
+                transition: all 0.8s;
+                overflow: hidden;
+                flex-direction: column;
+                background: rgba(0,0,0,0.75);
+            }
+        }
+    }     
+}
+
+footer{
+    padding: 50px 42px;
+    p{
+        max-width: 300px;
+    }
+    .contact{
+        a{
+            color: inherit;
+            &:hover{
+                font-weight: bold;
+            }
+        }
+    }
+    .snsLink li{
+        a{
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .snsGoogle{
+            color: #DB4437;
+        }
+        .snsTwitter{
+            color: #41ABE1;
+        }
+        .snsFb{
+            color: #3A5795;
+        }
+        
+    }
+    @include phone{
+        padding: 50px 30px;
+    }
+}
+#gotop{
+    font-size: 35px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: #3D1101;
+}
+

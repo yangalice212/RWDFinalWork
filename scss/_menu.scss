@@ -1,0 +1,104 @@
+.menuMain{
+    a{
+        color: inherit;
+    }
+    .sidebar{
+        li{
+            border-bottom: 1px solid #3D1101;
+            a{
+                line-height: 32px;
+                &:hover,&.active{
+                    background: #3D1101;
+                    color: #EFE9E7;
+                }
+            }
+        }
+    }
+    section{
+        .search{
+            width: 460px;
+            input{
+                border: 2px solid #3D1101;
+            }
+            a{
+                color: white;
+                padding: 3px;
+            }
+        }
+        @include pad{
+            .search{
+                width: 230px;
+            }
+        }
+        .shopcart{
+            font-size: 26px;
+            border-left: 1px solid #3D1101;
+            span{
+                background: #F56C23;
+                border-radius: 50%;
+                width: 16px;
+                height: 16px;
+                left: 30px;
+            }
+        }
+    }
+    .menuItem{
+        &>div{
+            box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+        }
+        img{
+            object-fit: cover;
+            height: 120px;
+        }
+        .favorite{
+            top: 0;
+            left: 10px;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        h5::after{
+            content: '';
+            background: #3D1101;
+            height: 1px;
+            width: 91px;
+            position: absolute;
+            left: 33%;
+            top: 30px;
+        }      
+        .addCart{
+            padding: 3px 46px;
+        }  
+        .hotSale{
+            top: -10px;
+            right: -10px;
+            width: 100px;
+            height: 80px;
+            overflow: hidden;
+            &::before,&::after{
+                position: absolute;
+                content: "";
+                display: block;
+                border: 6px solid #078F6D;
+                z-index: 1;
+            }
+            &::before{
+                top: 67px;
+                right: 0;
+            }
+            &::after{
+                right: 67px;
+            }
+            &Text{
+                background: #00CC99;
+                top: 20px;
+                right: -50px;
+                width: 160px;
+                padding: 2px 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transform: rotate(45deg);
+                z-index: 2;
+            }
+        }
+    }
+}
